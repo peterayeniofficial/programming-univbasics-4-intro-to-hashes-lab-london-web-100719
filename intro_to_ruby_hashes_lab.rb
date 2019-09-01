@@ -40,5 +40,6 @@ def update_counting_hash(hash, key)
   else 
     
     return hash[:key] = value += 1
+  end
   
 end
