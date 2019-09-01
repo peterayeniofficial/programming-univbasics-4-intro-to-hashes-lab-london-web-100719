@@ -34,10 +34,8 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
   hash.each {|key, value|
   if :key == nil
-    hash[:key] = 1
+    return hash[:key] = 1
   else 
-    hash[:key] = value += 1
-  puts "#{key} is #{value}" }
-  
+    return hash[:key] = value += 1
   
 end
